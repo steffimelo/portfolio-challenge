@@ -1,0 +1,495 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #212122;
+    --cor-de-fundo-menu: #212122;
+    --cor-do-link: #FFFFFF;
+    --cor-do-texto: #FFFFFF;
+    --cor-da-borda: #E19AE0;
+    --cor-secundaria: #9E7AAE;
+    
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Syne', sans-serif;
+    margin: 0 !important;
+    box-sizing: border-box;
+    padding: 0 !important;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+
+section {
+    margin-bottom: 50px; /* Espaçamento entre as seções */
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+p, h1, h2, h3 {
+    text-decoration: none;
+    color: var(--cor-do-texto);
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color:var(--cor-de-fundo-menu);
+    
+}
+
+.cabecalho__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.cabecalho__logo {
+    width: 80px;
+
+}
+
+.cabecalho__titulo {
+    font-size: 16px !important;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento  {
+    font-size: 0.9rem;
+    gap: 30px;
+    transition: transform 0.5s ease;
+}
+
+.navegacao__elemento:hover {
+    transform: scale(1.1);
+}
+
+.navegacao__elemento:hover a {
+   color: var(--cor-da-borda);
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.apresentacao__titulo {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    line-height: 60px;
+    margin-bottom: -5px;
+}
+
+.apresentacao__subtitulo {
+    font-size: 20px;
+}
+
+.apresentacao__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.redes__elemento {
+    font-size: 20px;
+    font-weight: 500;
+    transition: transform 0.5s ease;
+    color: var(--cor-do-texto);
+}
+
+.redes__elemento:hover {
+    color: var(--cor-da-borda);
+    transform: scale(1.1);
+}
+
+.redes__icon {
+    width: 16px;
+    padding-left: 5px;
+}
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    padding-right: 385px !important;
+    line-height: 1.8;
+    word-wrap: break-word;
+    background: linear-gradient(#8784B1, #B470AC);
+    border-radius: 10px;
+    padding: 50px 80px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.sobre-mim__titulo {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.sobre-mim__texto {
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.sobre-mim__assinatura {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    
+}
+
+.habilidades__elemento {
+    display: wrap;
+    border: 2px solid var(--cor-da-borda);
+    border-radius: 10px;
+    align-items: flex-end;
+    width: 200px;
+    height: 95px;
+    padding: 128px 16px 16px 16px;;
+}
+
+.habilidades__icone {
+    width: 35px;
+    transition: transform 0.5s ease;
+    margin-bottom: -10px;
+}
+
+.habilidades__icone:hover {
+    transform: scale(1.2); /* Aumenta em 10% ao passar o mouse */
+}
+
+.habilidades__elemento:hover .habilidades__icone {
+    transform: scale(1.2);
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.hobbies__elemento {
+    display: wrap;
+    border: 2px solid var(--cor-da-borda);
+    border-radius: 10px;
+    align-items: flex-end;
+    width: 200px;
+    height: 95px;
+    padding: 128px 21px 16px 16px;
+}
+
+.hobbies__icone {
+    width: 32px;
+    margin-bottom: -10px;
+    transition: transform 0.5s ease;
+}
+
+.hobbies__icone:hover {
+    transform: scale(1.2); /* Aumenta em 10% ao passar o mouse */
+}
+
+.hobbies__elemento:hover .hobbies__icone{
+    transform: scale(1.2);
+}
+
+
+
+/*------------------------------ Seção de Formação Acadêmica --------------------------------*/
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.formacao__lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.formacao__icone{
+    background-color: var(--cor-do-link);
+    border-radius: 10px;
+    transition: transform 0.5s ease;    
+}
+
+.formacao__icone:hover {
+    transform: scale(1.1); /* Aumenta em 10% ao passar o mouse */
+}
+
+.formacao__detalhe {
+    margin-top: -10px;
+    margin-bottom: 30px;;         
+}
+
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.projetos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px;
+}
+
+.projetos__elemento, .projetos__nome, .projetos__descricao {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.projetos__imagem {
+   transition: transform 0.5s ease; 
+}
+
+.projetos__imagem:hover {
+    transform: scale(1.1);
+}
+
+.projetos__descricao {
+    margin-top: -10px;
+    margin-bottom: 30px;;         
+}
+
+
+.projetos__botoes {
+    display: flex;
+    gap: 16px; /* Espaçamento entre os botões */
+}
+
+.projetos__botao {
+    padding: 13px 35px;
+    border-radius: 5px;
+    font-size: 18px;;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.projetos__botao-repositorio {
+    border: 2px solid; /* Borda transparente */
+    border-color: var(--cor-da-borda);
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+   
+    
+}
+
+.projetos__botao-repositorio:hover {
+    border-color: var(--cor-da-borda);
+    color: var(--cor-da-borda);
+}
+
+.projetos__botao-projeto {
+    background: linear-gradient(#8784B1, #B470AC);
+    color: var(--cor-do-texto);
+    border: none; 
+}
+
+.projetos__botao-projeto:hover {
+    background: linear-gradient(#B470AC, #8784B1); 
+}
+
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.contato__campo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 456px 16px 16px;
+    font-size: 16px;
+    font-family: "Syne", sans-serif;
+}
+
+.contato__campo--textarea {
+    padding: 16px 456px 30px 16px;
+}
+
+.contato__botao {
+    background: linear-gradient(#8784B1, #B470AC);
+    color: var(--cor-do-texto);
+    border: none; 
+    border-radius: 8px;
+    padding: 16px 35px;
+    font-size: 18px;
+  
+}
+
+.contato__botao:hover {
+    background-color: var(--cor-da-borda);
+}
+
+/*------------------------------ Seção de Rodapé ---------------------------------*/
+
+.rodape {
+    background-color: var(--cor-da-borda);
+    color: var(--cor-secundaria);
+    width: 100%;
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 5px 0; 
+}
+
+.rodape__link:hover {
+    color: var(--cor-secundaria);
+}
+
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1200px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
